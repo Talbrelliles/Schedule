@@ -1,0 +1,10 @@
+@import 'libraryCourse';
+.library{
+    grid-column: library-s/library-e;
+       display: grid;
+       grid-template-rows: [title-s] [title-e courses-s] 100px repeat(auto-fit, 1fr) [courses-e];
+
+    &__title{
+        //grid-row: title-s/title-e;
+    }
+}
