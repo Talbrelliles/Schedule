@@ -1,10 +1,11 @@
 @import 'variables';
-
+/*TALMAGE YOU ARE AT 9:37 ON THE VIDEO */
 .library-course{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr 45px 58px;
     grid-template-rows: 80px, 1fr;
    
+ align-items: center;
  
     &__line{
         grid-column: 1/-1;
@@ -17,13 +18,15 @@
        display: flex;
        grid-column: 1/2;
     }
-    &__arrowarrow{
+    &__arrow{
         grid-row: 1/2;
-        grid-column: 2;
+        grid-column: 2/3;
     }
-    &__actionaction{
+    &__action{
         grid-row: 1/2;
         grid-column: 3/4;
+        justify-self: end;
+       
     }
     &__description{
         grid-row: 2/3;
