@@ -1,10 +1,11 @@
 @import 'variables';
-/*TALMAGE YOU ARE AT 9:37 ON THE VIDEO */
+
 .library-course{
     display: grid;
     grid-template-columns: 1fr 45px 58px;
     grid-template-rows: 32px 1fr;
 z-index: 50;
+margin-right: 10px;
  align-items: center;
   /*
     &__line{

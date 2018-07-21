@@ -1,7 +1,7 @@
 .schedule{
     display: grid;
     grid-row: 1/-1;
-    grid-template-rows: 100px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
+    grid-template-rows:  [space-one-s] 1fr[space-one-e] 100px repeat(5, 80px) [progress-s] 76px [progress-e];
     grid-row-gap: 22px;
 }
 .schedule{
@@ -10,6 +10,23 @@
      height: 100%;
     width: 100%;
     
+    align-items: center;
+    justify-items: center;
+    
+    align-content: start;
+    
+    padding-top: 237px;
+    &__title{
+       
+        position: absolute;
+        top: 154px;
+        color: white;
+        font-weight: lighter;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        text-align: center;
+        @include border-left;
+    }
 }
 .gradient{
     position: absolute;
@@ -17,4 +34,5 @@
     width: 100%;
     background: linear-gradient(120deg, $color-purple 0%, $color-light-blue 100%);
     z-index: -10;
+    
 }
